@@ -1,0 +1,27 @@
+// since we have a lot of classes and to facilitate the process of running
+// I used a makefile 
+
+N.B: FILE.mfsm is a variable entred by the user. However, it should be in the same folder or user can specify full path to file
+
+To Compile:
+- Method1
+	make 
+OR
+-Method2 -> * is a wildcard to compile all cpp files instead of writing them all
+	g++ -std=c++11 -pthread -ggdb -fno-elide-constructors -o MFSMtest *.cpp
+
+
+
+To run:
+	N.B: testfiles is specific to my case since I have a folder with this name but it can work with any provided path
+	./MFSMtest testfiles/FILE.mfsm
+	
+To remove the run:
+	make clean
+	
+	
+	
+	
+Limitations:
+	- it gets 7 - 10 seconds to compile
+	

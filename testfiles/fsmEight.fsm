@@ -1,0 +1,12 @@
+FSM fsmEight
+States:
+a: out “state A”, X=X+10, sleep 5, wait
+b: out “state B”, sleep 5, wait
+c: out “thank you for using fsm8”, out X, end
+
+Transitions:
+a, b, 1
+b, a, 2
+a, a, 2
+b, b, 1
+b, c, 3

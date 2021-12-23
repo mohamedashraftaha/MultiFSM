@@ -1,0 +1,13 @@
+FSM fsmFour
+VAR W
+States:
+a: out “state A”, X=X+4, sleep 5, wait
+b: out “state B”, W=W+1, sleep 5, wait
+c: out “thank you for using fsm4”, out X, out W, end
+
+Transitions:
+a, b, 1
+b, a, 2
+a, a, 2
+b, b, 1
+b, c, 3

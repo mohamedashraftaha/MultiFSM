@@ -1,0 +1,111 @@
+########## FSM RUNNING ##########
+
+FSM Name: fsmSix
+
+############# ACTIVE STATE: a ################
+~~~ Running OUT action ~~~
+Action: out "“state A”"
+Output: “state A”
+~~~ Running Addition action ~~~
+Expression X=X+3
+result: 15
+~~~ Running Addition action ~~~
+Expression Z=Z+7
+result: 13
+~~~ Running SLEEP action ~~~
+Action: sleep 5
+Output: The FSM is halting for 5 seconds
+~~~ Running WAIT action ~~~
+Waiting for next transition input CurrentState: a Current Machine: fsmSix
+
+~~~~~~~~~ Moving to the Next State: "b"~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+############# ACTIVE STATE: b ################
+~~~ Running OUT action ~~~
+Action: out "“state B”"
+Output: “state B”
+~~~ Running Addition action ~~~
+Expression Y=Y+3
+result: 3
+~~~ Running Addition action ~~~
+Expression S=Y+4
+result: 7
+~~~ Running SLEEP action ~~~
+Action: sleep 5
+Output: The FSM is halting for 5 seconds
+~~~ Running WAIT action ~~~
+Waiting for next transition input CurrentState: b Current Machine: fsmSix
+
+~~~~~~~~~ Moving to the Next State: "b"~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+############# ACTIVE STATE: b ################
+~~~ Running OUT action ~~~
+Action: out "“state B”"
+Output: “state B”
+~~~ Running Addition action ~~~
+Expression Y=Y+3
+result: 7
+~~~ Running Addition action ~~~
+Expression S=Y+4
+result: 11
+~~~ Running SLEEP action ~~~
+Action: sleep 5
+Output: The FSM is halting for 5 seconds
+~~~ Running WAIT action ~~~
+Waiting for next transition input CurrentState: b Current Machine: fsmSix
+
+~~~~~~~~~ Moving to the Next State: "a"~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+############# ACTIVE STATE: a ################
+~~~ Running OUT action ~~~
+Action: out "“state A”"
+Output: “state A”
+~~~ Running Addition action ~~~
+Expression X=X+3
+result: 28
+~~~ Running Addition action ~~~
+Expression Z=Z+7
+result: 20
+~~~ Running SLEEP action ~~~
+Action: sleep 5
+Output: The FSM is halting for 5 seconds
+~~~ Running WAIT action ~~~
+Waiting for next transition input CurrentState: a Current Machine: fsmSix
+
+~~~~~~~~~ Moving to the Next State: "b"~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+############# ACTIVE STATE: b ################
+~~~ Running OUT action ~~~
+Action: out "“state B”"
+Output: “state B”
+~~~ Running Addition action ~~~
+Expression Y=Y+3
+result: 12
+~~~ Running Addition action ~~~
+Expression S=Y+4
+result: 16
+~~~ Running SLEEP action ~~~
+Action: sleep 5
+Output: The FSM is halting for 5 seconds
+~~~ Running WAIT action ~~~
+Waiting for next transition input CurrentState: b Current Machine: fsmSix
+
+~~~~~~~~~ Moving to the Next State: "c"~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+############# ACTIVE STATE: c ################
+~~~ Running OUT action ~~~
+Action: out "“thank you for using fsm6”"
+Output: “thank you for using fsm6”
+~~~ Running OUT action ~~~
+Action: out COMVAR X
+Output: 30
+~~~ Running OUT action ~~~
+Action: out COMVAR Y
+Output: 12
+~~~ Running OUT action ~~~
+Action: out VAR S
+Output: 16
+~~~ Running OUT action ~~~
+Action: out COMVAR Z
+Output: 26
+############### FSM ENDED ###############

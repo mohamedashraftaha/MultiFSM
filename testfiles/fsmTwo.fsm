@@ -1,0 +1,13 @@
+FSM fsmTwo
+VAR Q
+States:
+a: out “state A”, X=X+2, sleep 5, wait
+b: out “state B”, Q=Q+1, sleep 5, wait
+c: out “thank you for using fsm2”, out X, out Q, end
+
+Transitions:
+a, b, 1
+b, a, 2
+a, a, 2
+b, b, 1
+b, c, 3

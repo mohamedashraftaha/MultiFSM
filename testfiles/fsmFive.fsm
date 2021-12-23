@@ -1,0 +1,13 @@
+FSM fsmFive
+VAR Q
+States:
+a: out “state A”, X=X+2, Z=Z+6, sleep 5, wait
+b: out “state B”, Y=Y+1, Q=Q+1, sleep 5, wait
+c: out “thank you for using fsm5”, out X, out Y, out Q, out Z, end
+
+Transitions:
+a, b, 1
+b, a, 2
+a, a, 2
+b, b, 1
+b, c, 3

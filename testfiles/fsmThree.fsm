@@ -1,0 +1,13 @@
+FSM fsmThree
+VAR S
+States:
+a: out “state A”, X=X+3, sleep 5, wait
+b: out “state B”, S=S+4, sleep 5, wait
+c: out “thank you for using fsm3”, out X, out S, end
+
+Transitions:
+a, b, 1
+b, a, 2
+a, a, 2
+b, b, 1
+b, c, 3

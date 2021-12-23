@@ -1,0 +1,39 @@
+########## FSM RUNNING ##########
+
+FSM Name: fsmSeven
+
+############# ACTIVE STATE: a ################
+~~~ Running OUT action ~~~
+Action: out "“state A”"
+Output: “state A”
+~~~ Running Addition action ~~~
+Expression X=X+10
+result: 10
+~~~ Running SLEEP action ~~~
+Action: sleep 5
+Output: The FSM is halting for 5 seconds
+~~~ Running WAIT action ~~~
+Waiting for next transition input CurrentState: a Current Machine: fsmSeven
+
+~~~~~~~~~ Moving to the Next State: "b"~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+############# ACTIVE STATE: b ################
+~~~ Running OUT action ~~~
+Action: out "“state B”"
+Output: “state B”
+~~~ Running SLEEP action ~~~
+Action: sleep 5
+Output: The FSM is halting for 5 seconds
+~~~ Running WAIT action ~~~
+Waiting for next transition input CurrentState: b Current Machine: fsmSeven
+
+~~~~~~~~~ Moving to the Next State: "c"~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+############# ACTIVE STATE: c ################
+~~~ Running OUT action ~~~
+Action: out "“thank you for using fsm7”"
+Output: “thank you for using fsm7”
+~~~ Running OUT action ~~~
+Action: out COMVAR X
+Output: 22
+############### FSM ENDED ###############

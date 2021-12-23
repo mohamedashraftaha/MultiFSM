@@ -1,0 +1,6 @@
+MFSM mFsmTwo
+COMVAR X, Y, Z
+machines:
+fsmFour
+fsmFive
+fsmSix
